@@ -1,0 +1,15 @@
+<input type="text" id="search" name="search" [(ngModel)]="searchText">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">categories</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of categories; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{item}}</td>
+      </tr>
+    </tbody>
+  </table>

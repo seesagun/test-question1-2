@@ -1,0 +1,19 @@
+main {
+    display: flex;
+}
+.containner{
+    min-width: 100px;
+}
+.sec1{
+    width: 200px;
+    min-width: 200px;
+}
+.sec3{
+    width: 300px;
+    min-width: 300px;
+}
+@media (max-width: 600px) {
+    .containner{
+        overflow: scroll;
+    }
+}
